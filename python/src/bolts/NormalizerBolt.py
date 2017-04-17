@@ -18,8 +18,4 @@ class NormalizerBolt(Bolt):
         # Task 1: make the words all lower case
         # Task 2: remove the common words
 
-        word = tup.values[0]
-        if word:
-            word = word.lower()
-            if word not in self.common_words:
-                self.emit([word])
+        pass

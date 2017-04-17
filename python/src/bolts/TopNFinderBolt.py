@@ -16,10 +16,7 @@ class TopNFinderBolt(Bolt):
         # TODO:
         # Task: keep track of the top N words
 
-        word = tup.values[0]
-        count = tup.values[1]
 
-        self.top_words[word] += count
 
         # report the top N words periodically
         if time.time() - self.last_report >= self.interval:
